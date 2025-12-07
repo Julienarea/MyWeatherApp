@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Погода</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Погода</h1>
+
+        <div class="input-section">
+            <div class="add-widget-by-coords">
+                <input type="text" id="lat-input" placeholder="Широта" />
+                <input type="text" id="lon-input" placeholder="Долгота" />
+                <button id="add-by-coords-btn">
+                        Добавить по координатам
+                    </button>
+            </div>
+
+            <div class="add-widget">
+                <input type="text" id="location-input" placeholder="Введите город" />
+                <button id="add-widget-btn">Добавить по городу</button>
+            </div>
+        </div>
+
+        <div id="weather-widgets-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
